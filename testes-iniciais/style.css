@@ -1,0 +1,375 @@
+@font-face {
+    font-family: "Rototo Thin";
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    src: url(../fonts/Titillium\ Web/300px);
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* REset de Página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Regular";
+}
+
+header {
+    background-color: #02155A;
+}
+
+.container-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+        /* border: 1px solid salmons; */
+}
+
+.header-flex { /*flex conteiner */
+display: flex;
+justify-content: flex-end;
+align-items: center;
+align-items: center;
+height: 85px;
+background-color: #02155A;
+}
+
+header .menu {
+    font-family: "Titillium Web";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 43%;
+    height: 100%;
+    margin-inline: 10px;
+}
+
+header .menu a {
+    background-color: #02155A;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* border: 1px solid white; */
+    align-items: center;
+    font-size: 13px;
+}
+
+/* LOGO MARCA */
+header .logo {
+    width: 100%;
+    height: 160px;
+    /* border: solid red; */
+    background-color: #050505;
+   }
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+}
+.imagem-Logo-Marca {
+    background-image: url(../images/LOGOMARCA.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* border-color: white; */
+    width: 310px;
+    height: 112px;
+}
+#divBusca{
+    background-color:#ffffff;
+    border:solid 2px transparent;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    align-items: center;
+}
+#txtBusca{
+    background-color:transparent;
+    padding-left:5px;
+    font-size: 15px;
+    border:none;
+    height:32px;
+    width:191px;
+    align-items: center;
+}
+#btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#ffffff;
+    align-items: center;
+}
+#divBusca img{
+    float:center;
+}
+.imagem-lupa {
+    background-image: url(../images/IMAGEM\ LUPA.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.acessa-conta {
+    background-image: url(../images/Acesse\ Conta.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 70px;
+}
+.sacola {
+    background-image: url(../images/Sacola.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 70px;
+}
+
+
+/* ICONES 1 */
+
+.icones {
+    height: 100px;
+    background-color: #02155A;
+}
+
+.icones-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.computador {
+    background-image: url(../images/1.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 85px;
+}
+.notebook {
+    background-image: url(../images/2.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 85px;
+}
+.smartphone {
+    background-image: url(../images/3.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 82px;
+    height: 85px;
+}
+.acessorios {
+    background-image: url(../images/4.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 85px;
+}
+.ps4 {
+    background-image: url(../images/5.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 92px;
+    height: 85px;
+}
+.xbox{
+    background-image: url(../images/6.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 92px;
+    height: 85px;
+}
+.portatil {
+    background-image: url(../images/7.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 92px;
+    height: 85px;
+}
+.retro {
+    background-image: url(../images/8.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 85px;
+}
+.seminovos {
+    background-image: url(../images/9.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 85px;
+}
+.gift {
+    background-image: url(../images/10.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 85px;
+}
+.categorias {
+    background-image: url(../images/11.PNG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 85px;
+}
+
+/* banner */
+
+.banner {
+    height: 545px;
+    background-image: url(../images/imagem\ fundo.jpg);
+    background-size: 100%;
+    background-position: 100%;
+}
+
+.banner-info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.banner .banner-info {
+    height: 100px;
+    color: #ffffff;
+    align-items: center;
+    height: 545px;
+    text-align: center;
+    
+        
+}
+.banner .banner-info .info-text {
+    color: #ffffff;
+    font-size: 40px;
+    align-items: center;
+    margin-top: 25px;
+    background-color: #050505;
+    height: 80px;
+    }
+
+.banner .banner-info-box .banner-images{
+    background-image: url(../images/banner\ imagens.png);
+    background-size: 100%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.info-pagamento {
+    height: 180px;
+    background-color: #050505;
+}
+
+.icones-pagamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    border: 2px solid white;
+}
+
+.cartao {
+    background-image: url(../images/cartão.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 70px;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 30px;
+    height: 60px;
+    width: 136px;
+    text-align: center;
+}
+
+.envio {
+    background-image: url(../images/entrega.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 101px;
+    height: 70px;
+}
+
+.text-01 {
+    color: #ffffff;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 30px;
+    height: 60px;
+    width: 170px;
+    text-align: center;
+}
+
+.atendimento {
+    background-image: url(../images/atendimento.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 61px;
+    height: 80px;
+}
+.text-02 {
+    color: #ffffff;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 30px;
+    height: 60px;
+    width: 157px;
+    text-align: center;
+}
+.presente {
+    background-image: url(../images/presente.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 82px;
+}
+.text-03 {
+    color: #ffffff;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 30px;
+    height: 60px;
+    width: 157px;
+    text-align: center;
+}
+.seguro {
+    background-image: url(../images/site\ seguro.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 81px;
+    height: 82px;
+}
+.text-04 {
+    color: #ffffff;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 30px;
+    height: 60px;
+    width: 157px;
+    text-align: center;
+}

@@ -1,0 +1,331 @@
+/*
+    Flexbox
+    Flexbox Froggy - joguinho do sapo
+    https://flexboxfroggy.com/
+    CSS Trics
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    Mozzila MDN
+    https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+    Origamida
+    https://origamid.com/projetos/flexbox-guia-completo/
+    
+    As 8 propriedades de background do css
+    https://www.maujor.com/tutorial/propriedade-css-para-estilizacao-de-background.php
+    Responsividade e media querie
+*/
+
+
+/* importa as fontes */
+@font-face {
+    font-family :  "Roboto-Thin" ;
+    src : url(./fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family :  "Roboto-Light" ;
+    src : url(./fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family :  'Roboto-Regular' ;
+    src : url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family :  'Roboto-Medium' ;
+    src : url(./fonts/Roboto/Roboto-Medium.ttf);
+}
+
+/* Reinicializar a página */
+* {
+    margin :  0 ;
+    padding :  0 ;
+    box-sizing : border-box;
+}
+
+body {
+    font-family :  'Roboto-Regular' ;
+    color : white;
+    /* herança */
+}
+
+/* Personalização do Bootstrap */
+
+/* CSS FEITO PARAO DESKTOP */
+
+
+
+.container-grid {
+    max-width :  1200 px ;
+    margin:  0 auto;
+    /* border: 1px solid salmon; */
+}
+/* 
+.container {
+    max-width: 1200px;
+} */
+
+/* cabeçalho */
+.header-flex {
+    /* contêiner flexível */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    height: 85px;
+    border: 1px solid blueviolet;
+    background-color: #1e1c21;
+}
+
+.header {
+    display: flex;
+    /* background-color: #1e1c21; */
+
+}
+
+header .logo {
+    border: 1px solid orange;
+    width: 280px; 
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid blueviolet;
+    width: 60%;
+    height: 100%;
+    color: white;
+}
+
+.header .menu a {
+    font-family :  "Roboto-Light" ;
+    color: white; 
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+header.barras menu {
+    display: none;
+}
+/* bandeira */
+
+.banner {
+    height:  100%;
+    /* não precisaria!! */
+    height:  600px; 
+    background-image: url(./image-e-players/banner_pilotos.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+}
+
+/* centraliza a informação do banner */
+.banner .banner-info-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 00px;
+}
+
+.banner .info-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 250px;
+    /* border: 1px white solid; */
+}
+
+.banner .banner-info .info-título {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner .banner-info .info-título {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+.banner .banner-info .info-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #E71A3F ;
+    background-color: #E71A3F ;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 250px ;
+    height: 45px;
+    margin: 0 auto;
+}
+
+/* patrocinadores */
+.patrocinados {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1E1C21 ;
+}
+
+.patrocinados-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* cor de fundo: #5c5858; */
+}
+
+/* SESSÃO PRODUTOS */
+.produtos {
+    background-color: #1e1c21;
+    fill: 30px  0;
+
+}
+
+.produtos  h2 {
+    font-family: 'Roboto-Medium';
+    margin-bottom: 20px;
+    font-size: 1,5 row;
+}
+
+.card {
+    max-width: 250px ;
+    margin-bottom: 20px ;
+    background-image: linear-gradient(white, #000000, #1E1C21);
+}
+
+.card .card-titulo {
+    font-family :  'Roboto-Medium' ;
+    /* transformação de texto: maiúsculas; */
+}
+
+.card .card-price {
+    font-size: 1,4 row ;
+    font-family:  'Roboto-Medium' ;
+}
+
+.card .btn-comprar {
+    background-color: #C31616;
+    border: 1px solid #C31616 ;
+
+    width: 100% ;
+    /* transformação de texto: maiúsculas; */
+}
+
+.card .card-titulo ,
+.card .btn-comprar {
+    text-transform: uppercase;
+}
+
+
+/* apaga */
+.border {
+    border: green solid 3px;
+}
+
+
+/* PONTOS DE INTERRUPÇÃO */
+/*
+    celulares 0 - 767px
+    tablets 768px - 991px
+    área de trabalho >= 992px - 1199px
+    telas granes >= 1200px - 1920px
+*/
+
+/* Tablets DESKTOP 992px - 1199px */
+/* @media todos e ( largura máxima :  1199 px ) {
+
+    . recipiente ,
+    . grade de contêiner 
+        largura máxima :  980 px ;
+    } */
+
+
+/* TABLETS tablets 768px - 991px*/
+/* @media todos e ( max-whitd:  991px ) {
+    .cabecalho .logo-tipo {
+        width:  230px ; 
+        margin-left: 15px;
+        
+    }
+} */
+
+    /* barra de navegação */
+    /* .cabecalho .menu {
+        position: fixed;
+        /* viewport de referência */
+        /* top:  0px ; _
+        /* coordenadas de posicionamento */
+        /* left: -80%;
+        index:  100px ; controle de camada */
+
+        /* opacity:  0 ; invisível */
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 80% ;
+        height:  100 % ;
+
+        fill:  20px 50px ; _  _
+        background-color:  rgba( 195 ,  22 ,  22 ,  0,98 );
+        raio da borda :  0  0  0  90 px ;
+        transição : esquerda 0,4 s , opacidade 0,5 s ;
+    }
+
+    .cabecalho .menu a {
+        margin-bottom: 20px;
+        fill: 20px; 
+        border-left:  3px dotted #AAB0AE;
+        font-size: 1,4 row ;
+        color:#AAB0AE;
+    } */ 
+
+    /* cabeçalho . barras de menu {
+        exibição : bloco;
+        largura :  40px ; _
+        margem direita :  15 px ;
+        cor : branco;
+    }
+
+    . mostraEscondeMenu {
+        esquerda :  0  !importante ;
+        opacidade :  1  !importante ; /* visível */
+    /* } */ */
+
+    .patrocinados {
+        display: none;
+    }
+
+
+
+/* SMARTPHONES celulares 0 - 767px */
+/* @media todos e ( largura máxima :  767 px ) {
+
+    . cabeçalho-flex {
+        altura :  65px ; _
+    }
+
+    cabeçalho . barras de menu {
+        largura :  25px ; _
+    }
+
+    cabeçalho . logotipo {
+        largura :  180px ; _
+    }
+
+    cabeçalho . menu  um {
+        margem inferior :  10 px ;
+        preenchimento :  10px ; _
+        border-left :  2 px pontilhado # AAB0AE ;
+        tamanho da fonte :  1 rem ;
+    }
+} */
